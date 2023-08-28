@@ -25,4 +25,9 @@ ActiveAdmin.register AdminUser do
     f.actions
   end
 
+  class AdminUser < ApplicationRecord
+    def self.ransackable_attributes(auth_object = nil)
+      super + [ 'email' ]
+    end
+  end
 end
