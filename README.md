@@ -13,5 +13,7 @@ Railsアプリケーションを作成するときの雛形
 　・自動化テスト           => Rspec  
 　・デバッグ機能           => pry-rails  
 
-◆本番環境について
-　現在作業中。
+◆git初期化手順
+1. git rm -rf --cached ./  
+2. git remote -v  
+3. git init  
